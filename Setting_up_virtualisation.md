@@ -4,12 +4,15 @@
 
 <img width="821" alt="Virtualisation diagram" src="https://user-images.githubusercontent.com/126012715/232557646-e6bfd7eb-9a33-4b3d-9bdc-e27136ca29ca.png">
 
-
-A vitual machine (VM) is an environment that works like a computer within it. Running on an isolated partition of it's local hosts computer, With it's own CPU power, memory, operating system (MacOs, Linux). Applications on VMs can be run by users.
+A virtual machine (VM) is an environment that works like a computer within it. Running on an isolated partition of it's local hosts computer, With it's own CPU power, memory, operating system (MacOs, Linux). Applications on VMs can be run by users.  
 
 <h3>Installation of Vagrant, Virtual Box, Ruby</h3>
 
-- Install Vagrant the latest or similar to the OS / operating system you have, Virtualbox and ruby from `brew install ruby` if on Macos
+Vagrant is an open source tool, used for building and maintaining portable virtual software developments environments. 
+
+- Install the latest `Vagrant` or similar to the OS / operating system you have, `brew install hashicorp/tap/hashicorp-vagrant` for the lastest version or see website for other versions.
+- Install the latest `Virtualbox` 
+- Install `ruby` from `brew install ruby` if on Macos, please download `homebrew` on git bash terminal.
 
 - Open IDE, VS code and setup your folder as "Virtualisation"
 - Create new directory using `git bash` terminal and do `mkdir<file>` 
@@ -21,7 +24,8 @@ A vitual machine (VM) is an environment that works like a computer within it. Ru
 
 Within MacOs users, errors may pop up, if persists use:
 
-- `$ vagrant init hashicorp/precise32` and follow the process
+- `$ vagrant init hashicorp/precise32` and follow the process.
+- 
 
 <h3>Using VS code we edit</h3>
 
