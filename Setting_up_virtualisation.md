@@ -2,6 +2,9 @@
 
 <h2>Virtual Machine</h2>
 
+<img width="821" alt="Virtualisation diagram" src="https://user-images.githubusercontent.com/126012715/232557646-e6bfd7eb-9a33-4b3d-9bdc-e27136ca29ca.png">
+
+
 A vitual machine (VM) is an environment that works like a computer within it. Running on an isolated partition of it's local hosts computer, With it's own CPU power, memory, operating system (MacOs, Linux). Applications on VMs can be run by users.
 
 <h3>Installation of Vagrant, Virtual Box, Ruby</h3>
