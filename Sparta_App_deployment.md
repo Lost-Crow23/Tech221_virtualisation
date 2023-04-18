@@ -1,4 +1,4 @@
-Deployment of Sparta App
+<h1>Deployment of Sparta App</h1>
 
 Step 1
 
@@ -21,53 +21,53 @@ Step 4
 
 Iteration to use within our terminal to implement sparta app
 
-Changing our Vagrantfile
+<h2>Changing our Vagrantfile</h2>
 
 - We add the configure code to implement the changes within our app and access the folder
 
   # syncing the app folder
   config.vm.synced_folder "app", "/home/vagrant/app"
 
-Step 1
+<h4>Step 1</h4>
 
 `sudo apt-get install python-software-properties`
 
 - Downloads the in built functions within python to our linux operating system.
 
-Step 2
+<h4>Step 2</h4>
 
 `curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -`
 
 - This runs the applications resources and packages needed to 
 
-Step 3
+<h4>Step 3 </h4>
 
 `sudo apt-get install nodejs -y`
 
 - This installs the node.js packages to later be used, as an app. 
 
-Step 4
+<h4>Step 4</h4>
 
 `sudo npm install pm2 -g`
 
 - Downloads the latest version of npm, and their dependencies 
 
-Step 5
+<h4>Step 5</h4>
 
 - `cd` onto your `app` with `ls` to find your specified file
 
-Step 6 
+<h4>Step 6</h4>
 
 `npm install` 
 
 - Saves you specified packages into dependencies by default.
 
-Step 7
+<h4>Step 7</h4>
 
 `npm start`
 
 - Starts the npm file
 
-Final iteration 
+<h4>Final iteration</h4>
 
 - Plug in your `IP` address onto browser and launch the nginx page wihth port 3000.
