@@ -24,9 +24,9 @@ Go to the directory of the where you have created your Virtualisation folder.
 <h3>Changing our Vagrantfile</h3>
 
 - We add the configure code to implement the changes within our app and access the folder
-
-  syncing the app folder
-  config.vm.synced_folder "app", "/home/vagrant/app"
+- Syncing the app folder
+  
+`config.vm.synced_folder "app", "/home/vagrant/app"`
 
 <h4>Step 1</h4>
 
