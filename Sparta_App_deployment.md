@@ -1,4 +1,4 @@
-<h1>Deployment of Sparta App</h1>
+<h1>Monolith Deployment of Sparta App</h1>
 
 <h4>Step 1</h4>
 
@@ -6,14 +6,42 @@ Go to the directory of the where you have created your Virtualisation folder.
 
 <h4>Step 2</h4>
 
-- Download our zip files, as given, app and Environment / Spec-Tests.
+- Download our zip files, app and environment / Spec-Tests.
 - Unzip the files and transfer it onto your virtualisation folder.
 
+<h3>Changing our Vagrantfile</h3>
+
+- We add the configure code to our Vagrant file to implement the changes within our app and access the Vagrant VM.
+
+```
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/xenial64"
+  config.vm.network "private_network", ip: "192.168.56.150"
+  # creating abs path to specific path to VM
+  config.vm.provision "shell", path: "provision.sh"
+  # syncing the app folder
+  config.vm.synced_folder "app", "/home/vagrant/app"  
+end
+
+```
 <h4>Step 3</h4>
 
 - `Vagrant destroy` this command destroys your virtual box so we need to create a new one.
 - We use `vagrant up` to make our connection to between the virtual box and vagrant. 
 
+<h4>Step 3</h4>
+
+- Edit our Nginx and ensure our startup is ready within the provision.sh file we created.
+
+```
+#!/bin/bash
+
+sudo apt-get update -y
+sudo apt-get upgrade -y
+sudo apt-get install nginx
+systemctl status nginx
+
+```
 <h4>Step 4</h4>
 
 - We ssh into our vagrant key folder to which is within the `ubuntu Linux`.
@@ -21,12 +49,7 @@ Go to the directory of the where you have created your Virtualisation folder.
 
 <h2>Iteration to use within our terminal to implement sparta app</h2>
 
-<h3>Changing our Vagrantfile</h3>
-
-- We add the configure code to implement the changes within our app and access the folder.
-- Syncing the app folder.
-  
-`config.vm.synced_folder "app", "/home/vagrant/app"`
+- We can run the command `sudo gem install bundler` , which is package for Ruby which managers and installs dependices.
 
 <h4>Step 1</h4>
 
