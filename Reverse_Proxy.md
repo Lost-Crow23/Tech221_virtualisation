@@ -1,4 +1,4 @@
-<h1>Setting up the reverse proxy</h1>
+<h1>Reverse Proxy</h1>
 
 <h3>What are ports?</h3>
 
@@ -7,6 +7,8 @@ traffic which enables a single device to run simultenously. A port number is uni
 port number must be sent alongside the IP address so that it can be pathed to the specific endpoint.
 
 <h3>What is a reverse proxy? How is it different to a proxy?</h3>
+
+![image](https://user-images.githubusercontent.com/126012715/232850097-e12802ff-a7a5-47f9-be7e-c02919277386.png)
 
 - It's a server that is stationed between the clients and servers, sending clients request to the specific server and in turn returning a response.
 - Manage incoming requests from clients to servers.
