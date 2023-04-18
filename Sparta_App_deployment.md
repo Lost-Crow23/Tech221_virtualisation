@@ -45,13 +45,20 @@ systemctl status nginx
 <h4>Step 4</h4>
 
 - We ssh into our vagrant key folder to which is within the `ubuntu Linux`.
-- Now we are our in our vagrant file, and we need to `ls` and `cd` onto our app folder.
+- Now we are in our vagrant file, and we need to `ls`(Checks contents within the folder) and `cd` (Change directory) onto our app script folder.
 
 <h2>Iteration to use within our terminal to implement sparta app</h2>
 
-- We can run the command `sudo gem install bundler` , which is package for Ruby which managers and installs dependices.
+- We can run the command `sudo gem install bundler` , which is a package for Ruby which manages and installs dependices.
+- `bundle` is used to ensure the correct ruby modules (gems) don't interfere with the app's requirements.
+- `rake spec` checks what we have installed as our gem dependencies and if missing we use `gem list` to decide what to install or not. (Since i run off
+MacOs, it did not work for specific operating system)
 
 <h4>Step 1</h4>
+
+ - node.js nodejs --v and pm2 was missing from the list so therefore following commands are required:
+
+`sudo apt-get install nodejs -y`
 
 `sudo apt-get install python-software-properties`
 
@@ -73,17 +80,17 @@ systemctl status nginx
 
 `sudo npm install pm2 -g`
 
-- Downloads the latest version of npm, and their dependencies 
+- Downloads the latest version of npm (Node package manager), which consists of libraries and helps manage their dependencies.
 
 <h4>Step 5</h4>
 
-- `cd` onto your `app` with `ls` to find your specified file
+- `cd` onto your `app` with `ls` to find your specified file.
 
 <h4>Step 6</h4>
 
 `npm install` 
 
-- Saves you specified packages into dependencies by default.
+- Saves your specified packages into dependencies by default.
 
 <h4>Step 7</h4>
 
@@ -94,5 +101,8 @@ systemctl status nginx
 <h4>Final iteration</h4>
 
 - Plug in your `IP` address onto browser and launch the nginx page wihth port 3000.
+
+<img width="1306" alt="Sparta Test App" src="https://user-images.githubusercontent.com/126012715/232857883-0b546a1b-05c5-4533-9daf-339bf0fa909c.png">
+
 
 <h1>Using the provision file</h1>
