@@ -84,9 +84,11 @@ use:
 
 <h3>Step 4</h3>
 
-We can use the follow command on VS code, and use the vagrant and virtual box connection to implement out script 
+We can use the follow command on VS code, and use the vagrant and virtual box connection to implement our script:
 
 - `config.vm.provision :shell, path: "provision.sh"`
+
+Let's us set a path to our provision we created so we it executes out the script when using our nginx. 
 
 <h3>Final Iteration</h3>
 
