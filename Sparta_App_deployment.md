@@ -2,11 +2,11 @@
 
 <h4>Step 1</h4>
 
-Go to the directory of the where you have created your Virtualisation folder.
+Go to the directory of where you have created your Virtualisation folder.
 
 <h4>Step 2</h4>
 
-- Download our zip files, app and environment / Spec-Tests.
+- Download the zip files, app and environment / Spec-Tests.
 - Unzip the files and transfer it onto your virtualisation folder.
 
 <h3>Changing our Vagrantfile</h3>
@@ -27,7 +27,7 @@ end
 <h4>Step 3</h4>
 
 - `Vagrant destroy` this command destroys your virtual box so we need to create a new one.
-- We use `vagrant up` to make our connection to between the virtual box and vagrant. 
+- We use `vagrant up` to make our connection between the virtual box and vagrant. 
 
 <h4>Step 3</h4>
 
@@ -44,19 +44,18 @@ systemctl status nginx
 ```
 <h4>Step 4</h4>
 
-- We ssh into our vagrant key folder to which is within the `ubuntu Linux`.
-- Now we are in our vagrant file, and we need to `ls`(Checks contents within the folder) and `cd` (Change directory) onto our app script folder.
+- We ssh into our vagrant key folder which is within the `ubuntu Linux`.
+- Now we are in our vagrant file, and we need to `ls`(Checks contents within the folder) and `cd` (Change directory) onto our app script-tests folder.
 
 <h2>Iteration to use within our terminal to implement sparta app</h2>
 
-- We can run the command `sudo gem install bundler` , which is a package for Ruby which manages and installs dependices.
+- We can run the command `sudo gem install bundler` , which is a package for Ruby which manages and installs dependencies.
 - `bundle` is used to ensure the correct ruby modules (gems) don't interfere with the app's requirements.
-- `rake spec` checks what we have installed as our gem dependencies and if missing we use `gem list` to decide what to install or not. (Since i run off
-MacOs, it did not work for specific operating system)
+- `rake spec` checks what we have installed as our gem dependencies and if missing we use `gem list` to decide what to install or not. (Specific older versions of MacOs operating system might interfere with the download of Ruby, e.g. High Sierra 10.13. 
 
 <h4>Step 1</h4>
 
- - node.js nodejs --v and pm2 was missing from the list so therefore following commands are required:
+ - node.js, nodejs --v and pm2 was missing from the list so therefore following commands are required:
 
 `sudo apt-get install nodejs -y`
 
