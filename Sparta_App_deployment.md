@@ -19,9 +19,9 @@ Go to the directory of the where you have created your Virtualisation folder.
 - We ssh into our vagrant key folder to which is within the `ubuntu Linux`
 - Now we are our in our vagrant file, and we need to `ls` and `cd` onto our app folder
 
-Iteration to use within our terminal to implement sparta app
+<h2>Iteration to use within our terminal to implement sparta app</h2>
 
-<h2>Changing our Vagrantfile</h2>
+<h3>Changing our Vagrantfile</h3>
 
 - We add the configure code to implement the changes within our app and access the folder
 
