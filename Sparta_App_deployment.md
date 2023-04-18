@@ -16,15 +16,15 @@ Go to the directory of the where you have created your Virtualisation folder.
 
 <h4>Step 4</h4>
 
-- We ssh into our vagrant key folder to which is within the `ubuntu Linux`
-- Now we are our in our vagrant file, and we need to `ls` and `cd` onto our app folder
+- We ssh into our vagrant key folder to which is within the `ubuntu Linux`.
+- Now we are our in our vagrant file, and we need to `ls` and `cd` onto our app folder.
 
 <h2>Iteration to use within our terminal to implement sparta app</h2>
 
 <h3>Changing our Vagrantfile</h3>
 
-- We add the configure code to implement the changes within our app and access the folder
-- Syncing the app folder
+- We add the configure code to implement the changes within our app and access the folder.
+- Syncing the app folder.
   
 `config.vm.synced_folder "app", "/home/vagrant/app"`
 
@@ -38,7 +38,7 @@ Go to the directory of the where you have created your Virtualisation folder.
 
 `curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -`
 
-- This runs the applications resources and packages needed to 
+- This runs the applications software resources and packages needed to download node.js script.
 
 <h4>Step 3 </h4>
 
@@ -71,3 +71,5 @@ Go to the directory of the where you have created your Virtualisation folder.
 <h4>Final iteration</h4>
 
 - Plug in your `IP` address onto browser and launch the nginx page wihth port 3000.
+
+Using the provision file
