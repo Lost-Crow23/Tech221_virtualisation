@@ -1,5 +1,9 @@
 <h1>Monolith Deployment of Sparta App</h1>
 
+A monolith architecture is a single computing network with one material(code) that sycns with the business aspect. Entire stack needs to be updated to make a change and accessing the code, building and deploying the new version of interface.
+
+We use Vagrant, Ruby and VS code to illustrate a working example:
+
 <h4>Step 1</h4>
 
 Go to the directory of where you have created your Virtualisation folder.
