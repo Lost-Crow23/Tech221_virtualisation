@@ -52,14 +52,14 @@ Step 1
                 proxy_set_header Connection 'upgrade';
                 proxy_set_header Host $host;
                 proxy_cache_bypass $http_upgrade;
+        }
     }
-}
-" >> default
+        " >> default
 
 
-  Runs the sparta test program
- cd sync/app/
- sudo npm install
- sudo systemctl restart nginx
- node seeds/seed.js
- pm2 start app.js
+Runs the sparta test program
+cd sync/app/
+sudo npm install
+sudo systemctl restart nginx
+node seeds/seed.js
+pm2 start app.js
