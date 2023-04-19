@@ -44,7 +44,9 @@ Step 1
     sudo echo "
     server {
         listen 80;
+        
         server_name _;
+            
             location / {
                 proxy_pass http://192.168.10.100:3000;
                 proxy_http_version 1.1;
