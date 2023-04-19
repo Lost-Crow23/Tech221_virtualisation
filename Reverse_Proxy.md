@@ -37,7 +37,7 @@ Proxy:
 
 Step 1
 
-# Setting up the reverse proxy
+#Setting up the reverse proxy
 cd /etc/nginx/sites-available
 sudo rm -rf default
 sudo echo "
@@ -55,15 +55,15 @@ server {
 }
 " >> default
 
-# Sets the database location as an env variable
-# sudo nginx -t
-# cd /home/vagrant/
-# export DB_HOST=mongodb://192.168.10.150:27017/posts >> ~/.bashrc
-# source ~/.bashrc
+ Sets the database location as an env variable
+ sudo nginx -t
+ cd /home/vagrant/
+ export DB_HOST=mongodb://192.168.10.150:27017/posts >> ~/.bashrc
+ source ~/.bashrc
 
-# # Runs the sparta test program
-# cd sync/app/
-# sudo npm install
-# sudo systemctl restart nginx
-# node seeds/seed.js
-# pm2 start app.js
+  Runs the sparta test program
+ cd sync/app/
+ sudo npm install
+ sudo systemctl restart nginx
+ node seeds/seed.js
+ pm2 start app.js
