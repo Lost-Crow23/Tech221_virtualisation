@@ -109,3 +109,16 @@ systemctl status nginx
 
 
 <h1>Using the provision file</h1>
+
+To execute it through the provision.sh file, so that we do not need to run any commands in our terminal is as follows:
+
+`Vagrant Destroy` to destroy your currrent virtual box. 
+
+- Edit your provision.sh file as below with the commands in order.
+
+<img width="792" alt="Provision all files" src="https://user-images.githubusercontent.com/126012715/233015372-635490a7-5394-409b-bc27-ba16fe61ca38.png">
+
+
+`Vagrant up` in the git bash terminal 
+
+- This should automate Nginx, and once inputing the IP address, the Sparta App should pop up in your web browser.
